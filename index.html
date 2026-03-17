@@ -18,34 +18,29 @@
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
     color:var(--white);
   }
-.card{
+  .card{
     width:100%; max-width:520px; padding:28px 22px 28px;
     background:color-mix(in oklab, var(--panel) 92%, black 8%);
     border:1px solid var(--border);
     border-radius:24px; box-shadow: 0 10px 30px rgba(0,0,0,.45);
     backdrop-filter: blur(6px);
-    margin-top: 60px; 
+    margin-top: 80px; /* Logonun yukarıda kesilmemesi için kartı biraz daha aşağı ittik */
   }
-
-.avatar {
-  width: 188px;
-  height: 188px; 
-  border-radius: 50%;
-  display: block; 
-  margin: 0 auto 14px; 
-  background-color: transparent; 
-  border: 2px solid rgba(255, 255, 255, 0.35); 
-  overflow: hidden; 
-}
-
-
-.avatar img {
-  width: 100%; 
-  height: 100%;
-  object-fit: cover; 
-  margin-top: -10px; 
-                      
-}
+  .avatar{
+    width:120px; /* Logo boyutu küçültüldü */
+    height:120px; /* Logo boyutu küçültüldü */
+    border-radius:50%;
+    overflow:hidden;
+    display:block; 
+    margin:-75px auto 14px; /* Logoyu daha da yukarı taşıyan sihirli negatif margin */
+    background: var(--bg0);
+    border:3px solid rgba(255,255,255,.6); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    position: relative;
+  }
+  .avatar img{
+    width:100%; height:100%; object-fit:cover;
+  }
   .title{ text-align:center; font-weight:800; font-size:28px; margin:4px 0 6px;}
   .handle{ text-align:center; font-size:14px; opacity:.9; margin-bottom:14px}
   .tagline{ text-align:center; font-size:14px; color:var(--muted); margin:0 8px 18px }
